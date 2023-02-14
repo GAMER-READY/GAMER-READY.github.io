@@ -22,3 +22,7 @@ let copyrightElm = document.getElementById("copyright");
 let currentYear = new Date()
 copyrightElm.innerText += " 2019-" + currentYear.getFullYear();
 
+document.querySelector('.first-button').addEventListener('click', function() {
+
+  document.querySelectorAll('.animated-icon1').forEach(e => e.classList.toggle('open'))
+});
